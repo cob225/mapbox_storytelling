@@ -1,7 +1,7 @@
 var config = {
-    style: 'mapbox://styles/burgerjh/cm98v4e0y001c01qn7swuc8m0',
+    style: 'https://api.mapbox.com/styles/v1/calumobrien/cm98v4ff3002f01sa2tcsbyl8.html?title=view&access_token=pk.eyJ1IjoiY2FsdW1vYnJpZW4iLCJhIjoiY205OHJpaGFzMDV3OTJzcHRzczhlN2dmcSJ9.6pl_9t7JlQKauzPg0A9DnA&zoomwheel=true&fresh=true#2/38/-34',
     // leave commented to use Mapbox Standard Style
-    accessToken: 'pk.eyJ1IjoiYnVyZ2VyamgiLCJhIjoiY20yc3IyZXozMDBqdTJ2b3BpY3M3aWNqcCJ9.BRJ_B6H5_MYZ7Q_PBxcaQg',
+    accessToken: 'pk.eyJ1IjoiY2FsdW1vYnJpZW4iLCJhIjoiY205OHJpaGFzMDV3OTJzcHRzczhlN2dmcSJ9.6pl_9t7JlQKauzPg0A9DnA',
     showMarkers: false,
     markerColor: '#3FB1CE',
     //projection: 'equirectangular',
@@ -15,9 +15,9 @@ var config = {
     theme: 'light',
     use3dTerrain: false, //set true for enabling 3D maps.
     auto: false,
-    title: 'Color Purple Essay 2',
+    title: 'COB Essay',
     subtitle: 'Spatial Journeys across the South 2',
-    byline: 'Joost',
+    byline: 'OBrien',
     footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
