@@ -1,110 +1,92 @@
 var config = {
     style: 'https://api.mapbox.com/styles/v1/calumobrien/cm98v4ff3002f01sa2tcsbyl8.html?title=view&access_token=pk.eyJ1IjoiY2FsdW1vYnJpZW4iLCJhIjoiY205OHJpaGFzMDV3OTJzcHRzczhlN2dmcSJ9.6pl_9t7JlQKauzPg0A9DnA&zoomwheel=true&fresh=true#2/38/-34',
-    // leave commented to use Mapbox Standard Style
     accessToken: 'pk.eyJ1IjoiY2FsdW1vYnJpZW4iLCJhIjoiY205OHJpaGFzMDV3OTJzcHRzczhlN2dmcSJ9.6pl_9t7JlQKauzPg0A9DnA',
     showMarkers: false,
     markerColor: '#3FB1CE',
-    //projection: 'equirectangular',
-    //Read more about available projections here
-    //https://docs.mapbox.com/mapbox-gl-js/example/projections/
     inset: true,
     insetOptions: {
         markerColor: 'blue'
     },
     insetPosition: 'bottom-right',
     theme: 'light',
-    use3dTerrain: false, //set true for enabling 3D maps.
+    use3dTerrain: false,
     auto: false,
     title: 'COB Essay',
     subtitle: 'Spatial Journeys across the South 2',
     byline: 'OBrien',
-    footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    footer: 'Source: Novel texts, historical references. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
-            id: 'opening',
+            id: 'intro-thesis',
             alignment: 'centered',
             hidden: false,
-            title: 'The Color Purple',
-            image: './assets/color_purple_cover.jpg',
-            description: 'This is where I insert a description of the novel',
+            title: 'Mapping Gender, Race, and Power in Southern Literature',
+            image: './assets/thesis_image.jpg',
+            description: 'This project explores how movement, trade, and geography shape power dynamics in Southern literature. Using *The Color Purple*, *As I Lay Dying*, and *Salvage the Bones*, we map how gender, race, and class intersect in space.',
             location: {
-                center: [-90.3150946, 38.6605671],
-                zoom: 4,
-                pitch: 60,
+                center: [-90, 35],
+                zoom: 2,
+                pitch: 0,
                 bearing: 0
             },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 1,
-                //     duration: 5000
-                // }
-            ],
-            onChapterExit: [
-                // {
-                //     layer: 'layer-name',
-                //     opacity: 0
-                // }
-            ]
+            mapAnimation: 'flyTo'
         },
         {
             id: 'chapter-one',
             alignment: 'right',
             hidden: false,
-            title: 'Someplace Georgia',
+            title: 'Celie in Georgia',
             image: './assets/alice_walker_childhood_home.jpg',
-            description: 'Description of the second location.',
+            description: '"Dear God, I am fourteen years old. I am I have always been a good girl." Celie’s life is shaped by her static placement in rural Georgia—trapped in a cycle of abuse and invisibility.',
             location: {
                 center: [-83.5573651, 32.5573651],
                 zoom: 6.5,
                 pitch: 60,
-                bearing: -43.2,
-                // flyTo additional controls-
-                // These options control the flight curve, making it move
-                // slowly and zoom out almost completely before starting
-                // to pan.
-                //speed: 2, // make the flying slow
-                //curve: 1, // change the speed at which it zooms out
+                bearing: -43.2
             },
-            mapAnimation: 'flyTo',
-            rotateAnimation: true,
-            callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            mapAnimation: 'flyTo'
         },
         {
             id: 'chapter-two',
             alignment: 'left',
             hidden: false,
-            title: 'Olinka',
+            title: 'Colonial Connections: Olinka',
             image: './assets/firestone_farm.jpg',
-            description: 'Description of the Olinka people',
+            description: 'Nettie’s letters from Africa reveal that "the Olinka do not believe girls should be educated." Even globally, gendered oppression connects the South to colonial spaces through missionary work and rubber trade.',
             location: {
-                center: [-10.378889436404226, 6.251275915595865], 
-                zoom: 8.00,
-                pitch: 45.0,
-                bearing: 0.00
+                center: [-10.378889, 6.251275],
+                zoom: 8,
+                pitch: 45,
+                bearing: 0
             },
-            mapAnimation: 'flyTo',
-            rotateAnimation: false,
-            callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            mapAnimation: 'flyTo'
         },
         {
             id: 'chapter-three',
-            alignment: 'fully',
+            alignment: 'right',
             hidden: false,
-            title: 'End',
-            image: './assets/color_purple_field.jpg',
-            description: 'Close of the novel.',
+            title: 'Darl’s Journey in *As I Lay Dying*',
+            image: './assets/as_i_lay_dying.jpg',
+            description: 'Darl travels across Yoknapatawpha County but remains emotionally distant. His internal dislocation is echoed in the fractured journey. "I dont know what I am. I dont know if I am or not."',
             location: {
-                center: [-41.47212410646295, 34.781162343274076], 
-                zoom: 3,
-                pitch: 30,
+                center: [-89.4, 33.5],
+                zoom: 6.2,
+                pitch: 45,
+                bearing: -20
+            },
+            mapAnimation: 'flyTo'
+        },
+        {
+            id: 'chapter-four',
+            alignment: 'left',
+            hidden: false,
+            title: 'Sofia’s Resistance',
+            image: './assets/color_purple_field.jpg',
+            description: '"Hell no." Sofia’s refusal to submit to Miss Millie results in incarceration. Her movement is suddenly restricted, showing how resistance meets violent spatial control.',
+            location: {
+                center: [-91.0, 32.0],
+                zoom: 6.5,
+                pitch: 60,
                 bearing: 0
             },
             mapAnimation: 'flyTo'
@@ -138,10 +120,71 @@ var config = {
                 bearing: -30
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: true,
-            callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+                { layer: 'gender-trade-layer', opacity: 1 }
+            ],
+            onChapterExit: [
+                { layer: 'gender-trade-layer', opacity: 0 }
+            ]
+        },
+        {
+            id: 'chapter-seven',
+            alignment: 'right',
+            hidden: false,
+            title: 'Where the Data Falls Short',
+            image: './assets/gap.jpg',
+            description: 'Our maps can show where characters go—but not how they feel. Data misses pain, silence, and emotion: Celie’s interior life, or Esch’s grief, cannot be plotted with latitude.',
+            location: {
+                center: [-90, 35],
+                zoom: 3.5,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo'
+        },
+        {
+            id: 'chapter-eight',
+            alignment: 'left',
+            hidden: false,
+            title: 'Gendered Confinement: Houses as Traps',
+            image: './assets/house_interior.jpg',
+            description: 'Celie and Addie Bundren both suffer inside homes that silence them. We map confinement—not just movement—as part of their economic and gendered story.',
+            location: {
+                center: [-89.9, 32.3],
+                zoom: 6.2,
+                pitch: 30,
+                bearing: -20
+            },
+            mapAnimation: 'flyTo'
+        },
+        {
+            id: 'chapter-nine',
+            alignment: 'right',
+            hidden: false,
+            title: 'Reclaiming Space at the End',
+            image: './assets/color_purple_reunion.jpg',
+            description: 'Celie’s home becomes hers at last. "I’m pore, I’m black, I may be ugly... but I’m here." Her final geographic rootedness is also emotional and economic reclamation.',
+            location: {
+                center: [-83.6, 32.6],
+                zoom: 6.5,
+                pitch: 45,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo'
+        },
+        {
+            id: 'conclusion',
+            alignment: 'centered',
+            hidden: false,
+            title: 'Conclusion: What Maps Can—and Can’t—Show',
+            description: 'Spatial data helps uncover hidden patterns of control, resistance, and labor in Southern literature. But emotion, silence, and interiority are harder to chart. Maps should prompt deeper readings, not replace them.',
+            location: {
+                center: [-90, 35],
+                zoom: 3,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo'
         }
     ]
 };
