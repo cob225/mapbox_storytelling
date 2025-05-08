@@ -24,7 +24,6 @@
             color: #0071bc;
         }
 
-        
         #map {
             top: 0;
             height: 100vh;
@@ -100,7 +99,6 @@
 
         .step {
             padding-bottom: 50vh;
-            /* margin-bottom: 10vh; */
             opacity: 0.25;
         }
 
@@ -116,39 +114,37 @@
 
         .step img {
             width: 100%;
-    height: auto;
-    max-height: 60vh;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-            
+            height: auto;
+            max-height: 60vh;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
         }
 
         #legend {
-    position: fixed; /* ← changed from absolute */
-    bottom: 30px;
-    left: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 10px;
-    font-size: 12px;
-    line-height: 18px;
-    color: #333;
-    z-index: 10;
-    border-radius: 4px;
-    max-width: 200px;
-}
+            position: fixed;
+            bottom: 30px;
+            left: 10px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            font-size: 12px;
+            line-height: 18px;
+            color: #333;
+            z-index: 10;
+            border-radius: 4px;
+            max-width: 200px;
+        }
 
-.legend-key {
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    margin-right: 5px;
-    vertical-align: middle;
-    border: 1px solid #ccc;
-}
+        .legend-key {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            margin-right: 5px;
+            vertical-align: middle;
+            border: 1px solid #ccc;
+        }
 
         @media (max-width: 750px) {
-
             .centered,
             .lefty,
             .righty,
@@ -158,7 +154,6 @@
             }
         }
 
-        /* Fix issue on mobile browser where scroll breaks  */
         .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
         .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
             touch-action: unset;
@@ -167,7 +162,6 @@
 </head>
 
 <body>
-
     <div id="map"></div>
     <div id="legend" class="map-overlay legend light"></div>
     <div id="story"></div>
@@ -183,14 +177,14 @@
             'raster': ['raster-opacity'],
             'fill-extrusion': ['fill-extrusion-opacity'],
             'heatmap': ['heatmap-opacity']
-        }
+        };
 
         var alignments = {
             'left': 'lefty',
             'center': 'centered',
             'right': 'righty',
             'full': 'fully'
-        }
+        };
 
         function getLayerPaintType(layer) {
             var layerType = map.getLayer(layer).type;
@@ -207,6 +201,21 @@
                     map.setPaintProperty(layer.layer, transitionProp, options);
                 }
                 map.setPaintProperty(layer.layer, prop, layer.opacity, options);
+            });
+        }
+
+        function generateLegendFromVisibleLayers() {
+            const legend = document.getElementById('legend');
+            legend.innerHTML = '';
+
+            map.getStyle().layers.forEach(layer => {
+                const visibility = map.getLayoutProperty(layer.id, 'visibility');
+                if (visibility !== 'none' && (layer.type === 'fill' || layer.type === 'line' || layer.type === 'circle')) {
+                    const color = map.getPaintProperty(layer.id, `${layer.type}-color`);
+                    const key = document.createElement('div');
+                    key.innerHTML = `<span class="legend-key" style="background-color:${color}"></span>${layer.id}`;
+                    legend.appendChild(key);
+                }
             });
         }
 
@@ -257,9 +266,9 @@
             }
 
             if (record.description) {
-                var story = document.createElement('p');
-                story.innerHTML = record.description;
-                chapter.appendChild(story);
+                var storyText = document.createElement('p');
+                storyText.innerHTML = record.description;
+                chapter.appendChild(storyText);
             }
 
             container.setAttribute('id', record.id);
@@ -306,7 +315,6 @@
             projection: config.projection
         });
 
-        // Create a inset map if enabled in config.js
         if (config.inset) {
             map.addControl(
                 new GlobeMinimap({ ...config.insetOptions }),
@@ -319,9 +327,7 @@
             marker.setLngLat(config.chapters[0].location.center).addTo(map);
         }
 
-        // instantiate the scrollama
         var scroller = scrollama();
-
 
         map.on("load", function () {
             if (config.use3dTerrain) {
@@ -331,10 +337,8 @@
                     'tileSize': 512,
                     'maxzoom': 14
                 });
-                // add the DEM source as a terrain layer with exaggerated height
                 map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
 
-                // add a sky layer that will show when the map is highly pitched
                 map.addLayer({
                     'id': 'sky',
                     'type': 'sky',
@@ -344,14 +348,12 @@
                         'sky-atmosphere-sun-intensity': 15
                     }
                 });
-            };
+            }
 
             map.once('idle', () => {
-    generateLegendFromVisibleLayers();
-});
+                generateLegendFromVisibleLayers();
+            });
 
-
-            // setup the instance, pass callback functions
             scroller
                 .setup({
                     step: '.step',
@@ -368,105 +370,25 @@
                     if (config.showMarkers) {
                         marker.setLngLat(chapter.location.center);
                     }
+
                     if (chapter.onChapterEnter.length > 0) {
                         chapter.onChapterEnter.forEach(setLayerOpacity);
                     }
-                    if (chapter.callback) {
-                        window[chapter.callback]();
-                    }
-                    if (chapter.rotateAnimation) {
-                        map.once('moveend', () => {
-                            const rotateNumber = map.getBearing();
-                            map.rotateTo(rotateNumber + 180, {
-                                duration: 30000, easing: function (t) {
-                                    return t;
-                                }
-                            });
-                        });
-                    }
-                    if (config.auto) {
-                        var next_chapter = (current_chapter + 1) % config.chapters.length;
-                        map.once('moveend', () => {
-                            document.querySelectorAll('[data-scrollama-index="' + next_chapter.toString() + '"]')[0].scrollIntoView();
-                        });
+
+                    if (chapter.legendUpdate) {
+                        generateLegendFromVisibleLayers();
                     }
                 })
                 .onStepExit(response => {
                     var chapter = config.chapters.find(chap => chap.id === response.element.id);
                     response.element.classList.remove('active');
+
                     if (chapter.onChapterExit.length > 0) {
                         chapter.onChapterExit.forEach(setLayerOpacity);
                     }
                 });
-
-
-            if (config.auto) {
-                document.querySelectorAll('[data-scrollama-index="0"]')[0].scrollIntoView();
-            }
-        });    
-
-        function generateLegendFromVisibleLayers() {
-    const legend = document.getElementById('legend');
-    legend.innerHTML = '<h4>Legend</h4>';
-
-   // const layerNameMap = {
-     //   "Male": "Male Purchasers",
-       // "Female": "Female Purchasers",
-       // "movement-layer": "Movement Locations",
-        // Add more mappings here
-    //};
-
-    const layers = map.getStyle().layers;
-console.log(layers)
-    layers.forEach(layer => {
-        const visibility = map.getLayoutProperty(layer.id, 'visibility');
-        if (visibility === 'none') return;
-
-        let color = null;
-
-        try {
-            const type = map.getLayer(layer.id).type;
-console.log(type)
-            if (type === 'fill') {
-                color = map.getPaintProperty(layer.id, 'fill-color');
-            } else if (type === 'circle') {
-                color = map.getPaintProperty(layer.id, 'circle-color');
-            } else if (type === 'line') {
-                color = map.getPaintProperty(layer.id, 'line-color');
-            }
-
-            if (!color) return;
-
-            console.log(color)
-
-            // Handle rgba() or rgb() expressions
-            if (Array.isArray(color)) {
-                if (color[0] === 'rgba' || color[0] === 'rgb') {
-                    color = `${color[0]}(${color.slice(1).join(',')})`;
-                } else {
-                    return; // skip unsupported expressions
-                }
-            }
-
-            const label = layer.id;
-            console.log(color, label)
-            const item = document.createElement('div');
-            item.innerHTML = `<span class="legend-key" style="background-color: ${color};"></span>${label}`;
-            legend.appendChild(item);
-
-        } catch (err) {
-            console.warn(`Could not read paint property for layer "${layer.id}"`, err);
-        }
-    });
-
-    if (legend.innerHTML === '<h4>Legend</h4>') {
-        legend.innerHTML += '<p>No visible styled layers.</p>';
-    }
-}
-
-
+        });
     </script>
-
 </body>
 
 </html>
