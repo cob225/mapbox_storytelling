@@ -58,7 +58,7 @@ var config = {
             image: './assets/alice_walker_childhood_home.jpg',
             description: 'Description of the second location.',
             location: {
-                center: [-83.5573651, 32.5573651], 
+                center: [-83.5573651, 32.5573651],
                 zoom: 6.5,
                 pitch: 60,
                 bearing: -43.2,
@@ -106,6 +106,36 @@ var config = {
                 zoom: 3,
                 pitch: 30,
                 bearing: 0
+            },
+            mapAnimation: 'flyTo'
+        },
+        {
+            id: 'chapter-five',
+            alignment: 'right',
+            hidden: false,
+            title: 'Salvage the Bones: Esch in Mississippi',
+            image: './assets/salvage_dogfight.jpg',
+            description: 'Esch’s world is bounded by poverty, climate, and pregnancy. Movement is mostly circular—between home, pit, and woods—symbolizing limited economic escape.',
+            location: {
+                center: [-89.2, 30.5],
+                zoom: 6.5,
+                pitch: 45,
+                bearing: 15
+            },
+            mapAnimation: 'flyTo'
+        },
+        {
+            id: 'chapter-six',
+            alignment: 'left',
+            hidden: false,
+            title: 'Mapping Economic Activity by Gender',
+            image: './assets/gender_trade_graphic.jpg',
+            description: 'Mapped trades in *The Color Purple* show men mostly control formal trade (farming, property), while women barter in hidden or domestic economies. This imbalance affects their geographic agency.',
+            location: {
+                center: [-90.5, 33.3],
+                zoom: 6.5,
+                pitch: 30,
+                bearing: -30
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
