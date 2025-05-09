@@ -1,5 +1,5 @@
 var config = {
-    style: 'style: 'mapbox://styles/calumobrien/cm98v4ff3002f01sa2tcsbyl8',',
+    style: 'https://api.mapbox.com/styles/v1/calumobrien/cm98v4ff3002f01sa2tcsbyl8.html?title=view&access_token=pk.eyJ1IjoiY2FsdW1vYnJpZW4iLCJhIjoiY205OHJpaGFzMDV3OTJzcHRzczhlN2dmcSJ9.6pl_9t7JlQKauzPg0A9DnA&zoomwheel=true&fresh=true#2/38/-34',
     accessToken: 'pk.eyJ1IjoiY2FsdW1vYnJpZW4iLCJhIjoiY205OHJpaGFzMDV3OTJzcHRzczhlN2dmcSJ9.6pl_9t7JlQKauzPg0A9DnA',
     showMarkers: false,
     markerColor: '#3FB1CE',
@@ -11,9 +11,9 @@ var config = {
     theme: 'light',
     use3dTerrain: false,
     auto: false,
-    title: 'Mapping Project',
+    title: 'COB Essay',
     subtitle: 'Spatial Journeys across the South 2',
-    byline: 'Calum O'Brien',
+    byline: 'OBrien',
     footer: 'Source: Novel texts, historical references. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
@@ -22,7 +22,7 @@ var config = {
             hidden: false,
             title: 'Mapping Gender, Race, and Power in Southern Literature',
             image: './assets/thesis_image.jpg',
-            description: 'This project explores how movement, trade, and geography shape power dynamics in Southern literature. Using *The Color Purple*, *As I Lay Dying*, and *Salvage the Bones*, we map how gender, race, and class intersect in space.<br><br>Mapping the data from *Their Eyes Were Watching God*, *The Color Purple*, and *Salvage the Bones* revealed a striking pattern: control over space and access to economic resources frequently affect a character\'s power, freedom, and voice. While these digital tools enabled me to display movement and transactional behavior in new manners, they also revealed the limitations of data itself. Not every crucial moment in these novels involves a physical migration or monetary exchange; many are based on emotional transformations, symbolic gestures, or the silent imposition of power. In this essay, I suggest that Southern literature encodes social power in spatial and economic dimensions, but truly comprehending these writings necessitates data structures that can accommodate emotion, ambiguity, and symbolic meaning.',
+            description: 'This project explores how movement, trade, and geography shape power dynamics in Southern literature. Using *The Color Purple*, *As I Lay Dying*, and *Salvage the Bones*, we map how gender, race, and class intersect in space.',
             location: {
                 center: [-90, 35],
                 zoom: 2,
@@ -188,4 +188,3 @@ var config = {
         }
     ]
 };
-
