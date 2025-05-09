@@ -97,9 +97,9 @@ var config = {
             hidden: false,
             title: 'Favors that Don’t Fit the Form',
             image: './assets/salvage_dogfight.jpg',
-            description: 'Some economic exchanges fall into relational gray areas. When Celie says, “Anyhow, I got a ride into town,” it raises a question: Is that a service, a favor, or simply kindness? These acts of support are not easily mapped, but they convey trust and relational economy, especially for women who lack formal purchasing power. These exchanges matter, but they don’t appear in our current data structure, pointing to the limits of spreadsheets in their capturing.',
+            description: 'Some economic exchanges fall into relational gray areas. When “Anyhow, I got a ride into town,” is said in The Color Purple it raises a question: Is that a service, a favor, or simply kindness? These acts of support are not easily mapped, but they convey trust and relational economy, especially for women who lack formal purchasing power. These exchanges matter, but they don’t appear in our current data structure, pointing to the limits of spreadsheets in their capturing.',
             location: {
-                center: [-89.2, 30.5],
+                center: [-83.283663, 33.112203],
                 zoom: 6.5,
                 pitch: 45,
                 bearing: 15
