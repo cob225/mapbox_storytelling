@@ -11,7 +11,7 @@ var config = {
     theme: 'light',
     use3dTerrain: false,
     auto: false,
-    title: 'COB Essay',
+    title: 'Mapping Project',
     subtitle: 'Spatial Journeys across the South 2',
     byline: 'OBrien',
     footer: 'Source: Novel texts, historical references. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
