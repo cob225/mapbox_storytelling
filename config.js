@@ -132,7 +132,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Masculine Survival in Salvage the Bones',
-            image: './assets/gap.jpg',
+            image: './assets/81b4Z-QX0oL._AC_UF1000,1000_QL80_.jpg',
             description: 'In Salvage the Bones, male purchases dominate the data set. The men trade candies, food, and school supplies, but what they truly exchange is pride, survival, and control. Even youthful interactions have territorial implications. These purchases are modest, but they evoke the emotional intensity of scarcity. Female characters make almost no purchases on the map, highlighting how men control resources at the most basic levels.',
             location: {
                 center: [-89.273923, 30.390187],
