@@ -131,9 +131,9 @@ var config = {
             id: 'chapter-seven',
             alignment: 'right',
             hidden: false,
-            title: 'Where the Data Falls Short',
+            title: 'Masculine Survival in Salvage the Bones',
             image: './assets/gap.jpg',
-            description: 'Our maps can show where characters go—but not how they feel. Data misses pain, silence, and emotion: Celie’s interior life, or Esch’s grief, cannot be plotted with latitude.',
+            description: 'In Salvage the Bones, male purchases dominate the data set. The men trade candies, food, and school supplies, but what they truly exchange is pride, survival, and control. Even youthful interactions have territorial implications. These purchases are modest, but they evoke the emotional intensity of scarcity. Female characters make almost no purchases on the map, highlighting how men control resources at the most basic levels.',
             location: {
                 center: [-90, 35],
                 zoom: 3.5,
@@ -146,9 +146,9 @@ var config = {
             id: 'chapter-eight',
             alignment: 'left',
             hidden: false,
-            title: 'Gendered Confinement: Houses as Traps',
+            title: 'What the Numbers Miss',
             image: './assets/house_interior.jpg',
-            description: 'Celie and Addie Bundren both suffer inside homes that silence them. We map confinement—not just movement—as part of their economic and gendered story.',
+            description: 'The maps reveal the systems of economic and spatial power, but they lack emotional resonance. In Salvage the Bones, exchanges frequently involve loyalty, humiliation, or love. In The Color Purple, rides and presents are acts of solidarity. In Their Eyes Were Watching God, quiet is firmly imposed. These items do not fall under the "purchased by" category, yet nevertheless have an equally significant impact on the narrative. A really literary dataset would include emotional tone, symbolic significance, and relational dynamics, in addition to money and geography.',
             location: {
                 center: [-89.9, 32.3],
                 zoom: 6.2,
@@ -167,21 +167,7 @@ var config = {
             location: {
                 center: [-83.6, 32.6],
                 zoom: 6.5,
-                pitch: 45,
-                bearing: 0
-            },
-            mapAnimation: 'flyTo'
-        },
-        {
-            id: 'conclusion',
-            alignment: 'centered',
-            hidden: false,
-            title: 'Conclusion: What Maps Can—and Can’t—Show',
-            description: 'Spatial data helps uncover hidden patterns of control, resistance, and labor in Southern literature. But emotion, silence, and interiority are harder to chart. Maps should prompt deeper readings, not replace them.',
-            location: {
-                center: [-90, 35],
-                zoom: 4,
-                pitch: 0,
+                pitch: 30,
                 bearing: 0
             },
             mapAnimation: 'flyTo'
