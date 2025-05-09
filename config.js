@@ -32,12 +32,12 @@ var config = {
             mapAnimation: 'flyTo'
         },
         {
-            id: 'chapter-one',
+            id: 'Mapping Gendered Power in the South',
             alignment: 'right',
             hidden: false,
             title: 'Celie in Georgia',
             image: './assets/alice_walker_childhood_home.jpg',
-            description: '"Dear God, I am fourteen years old. I am I have always been a good girl." Celie’s life is shaped by her static placement in rural Georgia—trapped in a cycle of abuse and invisibility.',
+            description: 'One of the most obvious findings from the maps is that male characters are overwhelmingly the economic actors, especially in Salvage the Bones and The Color Purple. In lower Mississippi, where Salvage the Bones takes place, the majority of purchases are done by men. Similarly, purchases in The Color Purple were nearly exclusively made by men in Georgia and Liberia. The data for The Color Purple also included no "purchased" entries for female characters, emphasizing Celie's early economic obscurity. What's notable is that, despite being the story's narrator and emotional focus, Celie rarely participates in the world's economic structure, at least in formal transactions.',
             location: {
                 center: [-83.5573651, 32.5573651],
                 zoom: 6.5,
