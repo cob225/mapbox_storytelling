@@ -84,7 +84,7 @@ var config = {
             image: './assets/color_purple_field.jpg',
             description: 'Joe\'s unwillingness to allow Janie to speak at the store\'s opening isn\'t depicted on the map, but it defines Janie\'s public role. "Thank yuh fuh yo\' compliments, but mah wife don\'t know nothin\' \'bout no speech-makin\'." This comment is not about money or movement, yet it does reinforce a gendered barrier just as powerfully as the one demonstrated through the data. Social expectation and emotional control can also influence one\'s freedom in terms of economic access.',
             location: {
-                center: [-91.0, 32.0],
+                center: [-81.5333, 28.6125],
                 zoom: 6.5,
                 pitch: 60,
                 bearing: 0
