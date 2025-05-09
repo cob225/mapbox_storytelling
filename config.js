@@ -22,7 +22,7 @@ var config = {
             hidden: false,
             title: 'Introduction',
             image: './assets/thesis_image.jpg',
-            description: 'This project explores how movement, trade, and geography shape power dynamics in Southern literature. Using *The Color Purple*, *As I Lay Dying*, and *Salvage the Bones*, we mapMapping data from Their Eyes Were Watching God, The Color Purple, and Salvage the Bones found similarities in the relationship between gender and economic power. For instance, the female-to-male ratio of purchases in all three novels consistently demonstrated that men dominated economic activity, particularly in settings where control and survival were central themes. Even in works with female protagonists, such as The Color Purple, economic transactions are mainly handled by men, suggesting a gap between narrative focus and material authority. While these digital tools helped me represent power through movement and transaction, they also revealed what the data did not. Emotional transformation, symbolic action, and power structures unrelated to purchasing or selling.  how gender, race, and class intersect in space.',
+            description: 'This project explores how movement, trade, and geography shape power dynamics in Southern literature. Using *The Color Purple*, *As I Lay Dying*, and *Salvage the Bones*, we map how gender, race, and class intersect in space. Mapping data from *Their Eyes Were Watching God*, *The Color Purple*, and *Salvage the Bones* found similarities in the relationship between gender and economic power. For instance, the female-to-male ratio of purchases in all three novels consistently demonstrated that men dominated economic activity, particularly in settings where control and survival were central themes. Even in works with female protagonists, such as *The Color Purple*, economic transactions are mainly handled by men, suggesting a gap between narrative focus and material authority. While these digital tools helped me represent power through movement and transaction, they also revealed what the data did not: emotional transformation, symbolic action, and power structures unrelated to purchasing or selling.',
             location: {
                 center: [-90, 35],
                 zoom: 2,
@@ -32,12 +32,12 @@ var config = {
             mapAnimation: 'flyTo'
         },
         {
-            id: 'Mapping Gendered Power in the South',
+            id: 'chapter-one',
             alignment: 'right',
             hidden: false,
-            title: 'Celie in Georgia',
+            title: 'Mapping Gendered Power In The South',
             image: './assets/alice_walker_childhood_home.jpg',
-            description: 'One of the most obvious findings from the maps is that male characters are overwhelmingly the economic actors, especially in Salvage the Bones and The Color Purple. In lower Mississippi, where Salvage the Bones takes place, the majority of purchases are done by men. Similarly, purchases in The Color Purple were nearly exclusively made by men in Georgia and Liberia. The data for The Color Purple also included no "purchased" entries for female characters, emphasizing Celies early economic obscurity. Whats notable is that, despite being the storys narrator and emotional focus, Celie rarely participates in the worlds economic structure, at least in formal transactions.',
+            description: 'One of the most obvious findings from the maps is that male characters are overwhelmingly the economic actors, especially in *Salvage the Bones* and *The Color Purple*. In lower Mississippi, where *Salvage the Bones* takes place, the majority of purchases are done by men. Similarly, purchases in *The Color Purple* were nearly exclusively made by men in Georgia and Liberia. Even in books where female characters are the main protagonists, male dominance in economic activity persists. The data for *The Color Purple* also included no "purchased" entries for female characters, emphasizing Celie\'s early economic obscurity. What’s notable is that, despite being the story’s narrator and emotional focus, Celie rarely participates in the world’s economic structure—at least in formal transactions—making her geographic presence largely one of confinement rather than mobility or trade.',
             location: {
                 center: [-83.5573651, 32.5573651],
                 zoom: 6.5,
@@ -67,7 +67,7 @@ var config = {
             hidden: false,
             title: 'Darl’s Journey in *As I Lay Dying*',
             image: './assets/as_i_lay_dying.jpg',
-            description: 'Darl travels across Yoknapatawpha County but remains emotionally distant. His internal dislocation is echoed in the fractured journey. "I dont know what I am. I dont know if I am or not."',
+            description: 'Darl travels across Yoknapatawpha County but remains emotionally distant. His internal dislocation is echoed in the fractured journey. "I don\'t know what I am. I don\'t know if I am or not."',
             location: {
                 center: [-89.4, 33.5],
                 zoom: 6.2,
