@@ -161,13 +161,13 @@ var config = {
             id: 'chapter-nine',
             alignment: 'right',
             hidden: false,
-            title: 'Reclaiming Space at the End',
+            title: 'Conclusion',
             image: './assets/color_purple_reunion.jpg',
-            description: 'Celie’s home becomes hers at last. "I’m pore, I’m black, I may be ugly... but I’m here." Her final geographic rootedness is also emotional and economic reclamation.',
+            description: 'Mapping Southern literature has impacted my perspective on gender, space, and the economy. The overwhelming male control over purchases in all three novels, particularly in Salvage the Bones and The Color Purple, demonstrates how access to resources reflects greater power dynamics. It\'s worth noting that, even in a novel like The Color Purple, in which a woman narrates her own journey, economic power is often external to her. Spatial storytelling lets us see who moves, who buys, and who matters materially—but also reminds us of what stories and maps leave out.',
             location: {
-                center: [-83.6, 32.6],
-                zoom: 6.5,
-                pitch: 30,
+                center: [-90, 35],
+                zoom: 4,
+                pitch: 0,
                 bearing: 0
             },
             mapAnimation: 'flyTo'
