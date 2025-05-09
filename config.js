@@ -1,5 +1,5 @@
 var config = {
-    style: 'https://api.mapbox.com/styles/v1/calumobrien/cm98v4ff3002f01sa2tcsbyl8.html?title=view&access_token=pk.eyJ1IjoiY2FsdW1vYnJpZW4iLCJhIjoiY205OHJpaGFzMDV3OTJzcHRzczhlN2dmcSJ9.6pl_9t7JlQKauzPg0A9DnA&zoomwheel=true&fresh=true#2/38/-34',
+    style: 'style: 'mapbox://styles/calumobrien/cm98v4ff3002f01sa2tcsbyl8',',
     accessToken: 'pk.eyJ1IjoiY2FsdW1vYnJpZW4iLCJhIjoiY205OHJpaGFzMDV3OTJzcHRzczhlN2dmcSJ9.6pl_9t7JlQKauzPg0A9DnA',
     showMarkers: false,
     markerColor: '#3FB1CE',
