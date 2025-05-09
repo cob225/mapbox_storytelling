@@ -37,7 +37,7 @@ var config = {
             hidden: false,
             title: 'Celie in Georgia',
             image: './assets/alice_walker_childhood_home.jpg',
-            description: 'One of the most obvious findings from the maps is that male characters are overwhelmingly the economic actors, especially in Salvage the Bones and The Color Purple. In lower Mississippi, where Salvage the Bones takes place, the majority of purchases are done by men. Similarly, purchases in The Color Purple were nearly exclusively made by men in Georgia and Liberia. The data for The Color Purple also included no "purchased" entries for female characters, emphasizing Celie's early economic obscurity. What's notable is that, despite being the story's narrator and emotional focus, Celie rarely participates in the world's economic structure, at least in formal transactions.',
+            description: 'One of the most obvious findings from the maps is that male characters are overwhelmingly the economic actors, especially in Salvage the Bones and The Color Purple. In lower Mississippi, where Salvage the Bones takes place, the majority of purchases are done by men. Similarly, purchases in The Color Purple were nearly exclusively made by men in Georgia and Liberia. The data for The Color Purple also included no "purchased" entries for female characters, emphasizing Celies early economic obscurity. Whats notable is that, despite being the storys narrator and emotional focus, Celie rarely participates in the worlds economic structure, at least in formal transactions.',
             location: {
                 center: [-83.5573651, 32.5573651],
                 zoom: 6.5,
