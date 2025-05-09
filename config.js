@@ -147,7 +147,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'What the Numbers Miss',
-            image: './assets/house_interior.jpg',
+            image: './assets/Ih-holder-01.jpg',
             description: 'The maps reveal the systems of economic and spatial power, but they lack emotional resonance. In Salvage the Bones, exchanges frequently involve loyalty, humiliation, or love. In The Color Purple, rides and presents are acts of solidarity. In Their Eyes Were Watching God, quiet is firmly imposed. These items do not fall under the "purchased by" category, yet nevertheless have an equally significant impact on the narrative. A really literary dataset would include emotional tone, symbolic significance, and relational dynamics, in addition to money and geography.',
             location: {
                 center: [-83.5573651, 32.5573651],
@@ -162,7 +162,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Conclusion',
-            image: './assets/color_purple_reunion.jpg',
+            image: './assets/savannah-ga.jpg',
             description: 'Mapping Southern literature has impacted my perspective on gender, space, and the economy. The overwhelming male control over purchases in all three novels, particularly in Salvage the Bones and The Color Purple, demonstrates how access to resources reflects greater power dynamics. It\'s worth noting that, even in a novel like The Color Purple, in which a woman narrates her own journey, economic power is often external to her. Spatial storytelling lets us see who moves, who buys, and who matters materially—but also reminds us of what stories and maps leave out.',
             location: {
                 center: [-90, 35],
