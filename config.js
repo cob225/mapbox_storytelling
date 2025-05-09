@@ -51,7 +51,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Eatonville and the Performance of Male Power',
-            image: './assets/firestone_farm.jpg',
+            image: './assets/Welcome-to-Eatonville-Sign-785x583.png',
             description: 'In contrast, <em>Their Eyes Were Watching God</em> had a higher male-to-female buying ratio, particularly in Eatonville and Orlando. Although male interactions remained dominant, Florida\'s geography demonstrated greater economic agency among women than in the other novels. Joe Starks\' acquisition of 200 acres in Eatonville and decision to put a streetlamp are symbolic acts. “But Ah wants to give a speech with the rest of y’all. But it’s no use for me to try to stay dry for so long. The rest of y’all can stand around and look.” This is more than just buying land; it\'s about establishing authority and being visible. Eatonville has the closest male-to-female buying ratio in the sample, yet Joe remains the major player, utilizing his economic power to quiet Janie.',
             location: {
                 center: [-81.5333, 28.6125],
