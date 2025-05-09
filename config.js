@@ -22,7 +22,7 @@ var config = {
             hidden: false,
             title: 'Mapping Gender, Race, and Power in Southern Literature',
             image: './assets/thesis_image.jpg',
-            description: 'This project explores how movement, trade, and geography shape power dynamics in Southern literature. Using *The Color Purple*, *As I Lay Dying*, and *Salvage the Bones*, we map how gender, race, and class intersect in space.',
+            description: 'Mapping the data from Their Eyes Were Watching God, The Color Purple, and Salvage the Bones revealed a striking pattern: control over space and access to economic resources frequently affect a character's power, freedom, and voice. While these digital tools enabled me to display movement and transactional behavior in new manners, they also revealed the limitations of data itself. Not every crucial moment in these novels involves a physical migration or monetary exchange; many are based on emotional transformations, symbolic gestures, or the silent imposition of power. In this essay, I suggest that Southern literature encodes social power in spatial and economic dimensions, but truly comprehending these writings necessitates data structures that can accommodate emotion, ambiguity, and symbolic meaning.',
             location: {
                 center: [-90, 35],
                 zoom: 2,
