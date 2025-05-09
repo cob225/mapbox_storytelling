@@ -11,9 +11,9 @@ var config = {
     theme: 'light',
     use3dTerrain: false,
     auto: false,
-    title: 'Mapping Project',
-    subtitle: 'Spatial Journeys across the South 2',
-    byline: 'OBrien',
+    title: 'Mapping Project - Visual Essay',
+    subtitle: 'Mapping Power, Gender, and Place in Southern Literature',
+    byline: 'Calum OBrien',
     footer: 'Source: Novel texts, historical references. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
