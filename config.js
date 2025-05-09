@@ -96,7 +96,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Favors that Don’t Fit the Form',
-            image: './assets/salvage_dogfight.jpg',
+            image: './assets/The-Color-Purple-1.jpg',
             description: 'Some economic exchanges fall into relational gray areas. When “Anyhow, I got a ride into town,” is said in The Color Purple it raises a question: Is that a service, a favor, or simply kindness? These acts of support are not easily mapped, but they convey trust and relational economy, especially for women who lack formal purchasing power. These exchanges matter, but they don’t appear in our current data structure, pointing to the limits of spreadsheets in their capturing.',
             location: {
                 center: [-83.283663, 33.112203],
@@ -111,7 +111,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Tracking Emotional Labor',
-            image: './assets/gender_trade_graphic.jpg',
+            image: './assets/The-Color-Purple-2023.webp',
             description: 'Throughout The Color Purple, women perform enormous emotional labor by raising children, providing care, and supporting one another. These acts require time, energy, and spirit while leaving no trace in the purchase data. This is quite strange because raising a child would require some purchase data in a lot of ways. What if we had a field called "emotional exchange" or "relational labor"? The maps would appear vastly different and more accurately reflect how power and caring flow in the text.',
             location: {
                 center: [-9.903750, 6.345389],
