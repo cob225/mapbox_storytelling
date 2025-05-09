@@ -13,7 +13,7 @@ var config = {
     auto: false,
     title: 'Mapping Project',
     subtitle: 'Spatial Journeys across the South 2',
-    byline: 'OBrien',
+    byline: 'Calum OBrien',
     footer: 'Source: Novel texts, historical references. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
         {
