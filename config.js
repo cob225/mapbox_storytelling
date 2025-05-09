@@ -1,6 +1,6 @@
 var config = {
     style: 'mapbox://styles/calumobrien/cm98v4ff3002f01sa2tcsbyl8',
-    accessToken: 'YOUR_ACCESS_TOKEN_HERE', // Replace with a secure method in production
+    accessToken: 'YOUR_ACCESS_TOKEN_HERE', // Replace with your actual Mapbox access token
     showMarkers: false,
     markerColor: '#3FB1CE',
     inset: true,
@@ -22,7 +22,7 @@ var config = {
             hidden: false,
             title: 'Introduction',
             image: './assets/thesis_image.jpg',
-            description: 'This project explores how movement, trade, and geography shape power dynamics in Southern literature. Using *The Color Purple*, *As I Lay Dying*, and *Salvage the Bones*, we map how gender, race, and class intersect in space. Mapping data from *Their Eyes Were Watching God*, *The Color Purple*, and *Salvage the Bones* revealed similarities in the relationship between gender and economic power. For instance, the female-to-male ratio of purchases in all three novels consistently demonstrated that men dominated economic activity, particularly in settings where control and survival were central themes. Even in works with female protagonists, such as *The Color Purple*, economic transactions are mainly handled by men, suggesting a gap between narrative focus and material authority. While these digital tools helped me represent power through movement and transaction, they also revealed what the data did not: emotional transformation, symbolic action, and power structures unrelated to purchasing or selling.',
+            description: 'This project explores how movement, trade, and geography shape power dynamics in Southern literature. Using <em>The Color Purple</em>, <em>As I Lay Dying</em>, and <em>Salvage the Bones</em>, we map how gender, race, and class intersect in space. Mapping data from <em>Their Eyes Were Watching God</em>, <em>The Color Purple</em>, and <em>Salvage the Bones</em> revealed similarities in the relationship between gender and economic power. For instance, the female-to-male ratio of purchases in all three novels consistently demonstrated that men dominated economic activity, particularly in settings where control and survival were central themes. Even in works with female protagonists, such as <em>The Color Purple</em>, economic transactions are mainly handled by men, suggesting a gap between narrative focus and material authority. While these digital tools helped me represent power through movement and transaction, they also revealed what the data did not: emotional transformation, symbolic action, and power structures unrelated to purchasing or selling.',
             location: {
                 center: [-90, 35],
                 zoom: 4,
@@ -37,7 +37,7 @@ var config = {
             hidden: false,
             title: 'Mapping Gendered Power In The South',
             image: './assets/alice_walker_childhood_home.jpg',
-            description: 'One of the most obvious findings from the maps is that male characters are overwhelmingly the economic actors, especially in *Salvage the Bones* and *The Color Purple*. In lower Mississippi, where *Salvage the Bones* takes place, the majority of purchases are done by men. Similarly, purchases in *The Color Purple* were nearly exclusively made by men in Georgia and Liberia. Even in books where female characters are the main protagonists, male dominance in economic activity persists. The data for *The Color Purple* also included no "purchased" entries for female characters, emphasizing Celie\'s early economic obscurity.',
+            description: 'One of the most obvious findings from the maps is that male characters are overwhelmingly the economic actors, especially in <em>Salvage the Bones</em> and <em>The Color Purple</em>. In lower Mississippi, where <em>Salvage the Bones</em> takes place, the majority of purchases are done by men. Similarly, purchases in <em>The Color Purple</em> were nearly exclusively made by men in Georgia and Liberia. Even in books where female characters are the main protagonists, male dominance in economic activity persists. The data for <em>The Color Purple</em> also included no "purchased" entries for female characters, emphasizing Celie\'s early economic obscurity.',
             location: {
                 center: [-83.5573651, 32.5573651],
                 zoom: 6.5,
@@ -52,9 +52,9 @@ var config = {
             hidden: false,
             title: 'Eatonville and the Performance of Male Power',
             image: './assets/firestone_farm.jpg',
-            description: 'In contrast, *Their Eyes Were Watching God* had a higher male-to-female buying ratio, particularly in Eatonville and Orlando. Although male interactions remained dominant, Florida\'s geography demonstrated greater economic agency among women than in the other novels. Joe Starks\' acquisition of 200 acres in Eatonville and decision to put a streetlamp are symbolic acts. “But Ah wants to give a speech with the rest of y’all. But it’s no use for me to try to stay dry for so long. The rest of y’all can stand around and look.” This is more than just buying land; it\'s about establishing authority and being visible. Eatonville has the closest male-to-female buying ratio in the sample, yet Joe remains the major player, utilizing his economic power to quiet Janie.',
+            description: 'In contrast, <em>Their Eyes Were Watching God</em> had a higher male-to-female buying ratio, particularly in Eatonville and Orlando. Although male interactions remained dominant, Florida\'s geography demonstrated greater economic agency among women than in the other novels. Joe Starks\' acquisition of 200 acres in Eatonville and decision to put a streetlamp are symbolic acts. “But Ah wants to give a speech with the rest of y’all. But it’s no use for me to try to stay dry for so long. The rest of y’all can stand around and look.” This is more than just buying land; it\'s about establishing authority and being visible. Eatonville has the closest male-to-female buying ratio in the sample, yet Joe remains the major player, utilizing his economic power to quiet Janie.',
             location: {
-                center: [-10.378889, 6.251275],
+                center: [-81.5333, 28.6125],
                 zoom: 8,
                 pitch: 45,
                 bearing: 0
@@ -67,7 +67,7 @@ var config = {
             hidden: false,
             title: 'Where Women Disappear from the Map',
             image: './assets/as_i_lay_dying.jpg',
-            description: 'The data for *The Color Purple* is particularly noticeable in its absences because no female "purchased from" data were reported. Celie\'s description of the stamps used to mail letters—"Little fat queen of England stamps"—shows a woman participating with a global communication and empire. However, the database only registers this as a male transaction, which could be a mistake in the data provided.',
+            description: 'The data for <em>The Color Purple</em> is particularly noticeable in its absences because no female "purchased from" data were reported. Celie\'s description of the stamps used to mail letters—"Little fat queen of England stamps"—shows a woman participating with a global communication and empire. However, the database only registers this as a male transaction, which could be a mistake in the data provided.',
             location: {
                 center: [-89.4, 33.5],
                 zoom: 6.2,
@@ -80,9 +80,9 @@ var config = {
             id: 'chapter-four',
             alignment: 'left',
             hidden: false,
-            title: 'Sofia’s Resistance',
+            title: 'Silencing as a Transactional Act',
             image: './assets/color_purple_field.jpg',
-            description: '"Hell no." Sofia’s refusal to submit to Miss Millie results in incarceration. Her movement is suddenly restricted, showing how resistance meets violent spatial control.',
+            description: 'Joe\'s unwillingness to allow Janie to speak at the store\'s opening isn\'t depicted on the map, but it defines Janie\'s public role. "Thank yuh fuh yo\' compliments, but mah wife don\'t know nothin\' \'bout no speech-makin\'." This comment is not about money or movement, yet it does reinforce a gendered barrier just as powerfully as the one demonstrated through the data. Social expectation and emotional control can also influence one\'s freedom in terms of economic access.',
             location: {
                 center: [-91.0, 32.0],
                 zoom: 6.5,
@@ -112,7 +112,7 @@ var config = {
             hidden: false,
             title: 'Mapping Economic Activity by Gender',
             image: './assets/gender_trade_graphic.jpg',
-            description: 'Mapped trades in *The Color Purple* show men mostly control formal trade (farming, property), while women barter in hidden or domestic economies. This imbalance affects their geographic agency.',
+            description: 'Mapped trades in <em>The Color Purple</em> show men mostly control formal trade (farming, property), while women barter in hidden or domestic economies. This imbalance affects their geographic agency.',
             location: {
                 center: [-90.5, 33.3],
                 zoom: 6.5,
