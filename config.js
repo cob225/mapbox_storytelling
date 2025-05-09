@@ -114,7 +114,7 @@ var config = {
             image: './assets/gender_trade_graphic.jpg',
             description: 'Throughout The Color Purple, women perform enormous emotional labor by raising children, providing care, and supporting one another. These acts require time, energy, and spirit while leaving no trace in the purchase data. This is quite strange because raising a child would require some purchase data in a lot of ways. What if we had a field called "emotional exchange" or "relational labor"? The maps would appear vastly different and more accurately reflect how power and caring flow in the text.',
             location: {
-                center: [-90.5, 33.3],
+                center: [-9.903750, 6.345389],
                 zoom: 6.5,
                 pitch: 30,
                 bearing: -30
@@ -135,7 +135,7 @@ var config = {
             image: './assets/gap.jpg',
             description: 'In Salvage the Bones, male purchases dominate the data set. The men trade candies, food, and school supplies, but what they truly exchange is pride, survival, and control. Even youthful interactions have territorial implications. These purchases are modest, but they evoke the emotional intensity of scarcity. Female characters make almost no purchases on the map, highlighting how men control resources at the most basic levels.',
             location: {
-                center: [-90, 35],
+                center: [-83.5573651, 32.5573651],
                 zoom: 3.5,
                 pitch: 0,
                 bearing: 0
@@ -150,7 +150,7 @@ var config = {
             image: './assets/house_interior.jpg',
             description: 'The maps reveal the systems of economic and spatial power, but they lack emotional resonance. In Salvage the Bones, exchanges frequently involve loyalty, humiliation, or love. In The Color Purple, rides and presents are acts of solidarity. In Their Eyes Were Watching God, quiet is firmly imposed. These items do not fall under the "purchased by" category, yet nevertheless have an equally significant impact on the narrative. A really literary dataset would include emotional tone, symbolic significance, and relational dynamics, in addition to money and geography.',
             location: {
-                center: [-89.9, 32.3],
+                center: [-83.5573651, 32.5573651],
                 zoom: 6.2,
                 pitch: 30,
                 bearing: -20
