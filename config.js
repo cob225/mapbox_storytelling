@@ -39,7 +39,7 @@ var config = {
             image: './assets/Copy-of-Featured-Image-rupaul-9-1.png',
             description: 'One of the most obvious findings from the maps is that male characters are overwhelmingly the economic actors, especially in <em>Salvage the Bones</em> and <em>The Color Purple</em>. In lower Mississippi, where <em>Salvage the Bones</em> takes place, the majority of purchases are done by men. Similarly, purchases in <em>The Color Purple</em> were nearly exclusively made by men in Georgia and Liberia. Even in books where female characters are the main protagonists, male dominance in economic activity persists. The data for <em>The Color Purple</em> also included no "purchased" entries for female characters, emphasizing Celie\'s early economic obscurity.',
             location: {
-                center: [-83.5573651, 32.5573651],
+                center: [-89.273923, 30.390187],
                 zoom: 6.5,
                 pitch: 60,
                 bearing: -43.2
@@ -135,7 +135,7 @@ var config = {
             image: './assets/gap.jpg',
             description: 'In Salvage the Bones, male purchases dominate the data set. The men trade candies, food, and school supplies, but what they truly exchange is pride, survival, and control. Even youthful interactions have territorial implications. These purchases are modest, but they evoke the emotional intensity of scarcity. Female characters make almost no purchases on the map, highlighting how men control resources at the most basic levels.',
             location: {
-                center: [-83.5573651, 32.5573651],
+                center: [-89.273923, 30.390187],
                 zoom: 3.5,
                 pitch: 0,
                 bearing: 0
