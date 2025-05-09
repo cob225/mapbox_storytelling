@@ -95,9 +95,9 @@ var config = {
             id: 'chapter-five',
             alignment: 'right',
             hidden: false,
-            title: 'Salvage the Bones: Esch in Mississippi',
+            title: 'Favors that Don’t Fit the Form',
             image: './assets/salvage_dogfight.jpg',
-            description: 'Esch’s world is bounded by poverty, climate, and pregnancy. Movement is mostly circular—between home, pit, and woods—symbolizing limited economic escape.',
+            description: 'Some economic exchanges fall into relational gray areas. When Celie says, “Anyhow, I got a ride into town,” it raises a question: Is that a service, a favor, or simply kindness? These acts of support are not easily mapped, but they convey trust and relational economy, especially for women who lack formal purchasing power. These exchanges matter, but they don’t appear in our current data structure, pointing to the limits of spreadsheets in their capturing.',
             location: {
                 center: [-89.2, 30.5],
                 zoom: 6.5,
@@ -110,9 +110,9 @@ var config = {
             id: 'chapter-six',
             alignment: 'left',
             hidden: false,
-            title: 'Mapping Economic Activity by Gender',
+            title: 'Tracking Emotional Labor',
             image: './assets/gender_trade_graphic.jpg',
-            description: 'Mapped trades in <em>The Color Purple</em> show men mostly control formal trade (farming, property), while women barter in hidden or domestic economies. This imbalance affects their geographic agency.',
+            description: 'Throughout The Color Purple, women perform enormous emotional labor by raising children, providing care, and supporting one another. These acts require time, energy, and spirit while leaving no trace in the purchase data. This is quite strange because raising a child would require some purchase data in a lot of ways. What if we had a field called "emotional exchange" or "relational labor"? The maps would appear vastly different and more accurately reflect how power and caring flow in the text.',
             location: {
                 center: [-90.5, 33.3],
                 zoom: 6.5,
@@ -180,7 +180,7 @@ var config = {
             description: 'Spatial data helps uncover hidden patterns of control, resistance, and labor in Southern literature. But emotion, silence, and interiority are harder to chart. Maps should prompt deeper readings, not replace them.',
             location: {
                 center: [-90, 35],
-                zoom: 3,
+                zoom: 4,
                 pitch: 0,
                 bearing: 0
             },
