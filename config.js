@@ -21,7 +21,7 @@ var config = {
             alignment: 'centered',
             hidden: false,
             title: 'Introduction',
-            image: 'mackethan-headerimage2_0.webp',
+            image: './assets/mackethan-headerimage2_0.webp',
             description: 'This project explores how movement, trade, and geography shape power dynamics in Southern literature. Using <em>The Color Purple</em>, <em>As I Lay Dying</em>, and <em>Salvage the Bones</em>, we map how gender, race, and class intersect in space. Mapping data from <em>Their Eyes Were Watching God</em>, <em>The Color Purple</em>, and <em>Salvage the Bones</em> revealed similarities in the relationship between gender and economic power. For instance, the female-to-male ratio of purchases in all three novels consistently demonstrated that men dominated economic activity, particularly in settings where control and survival were central themes. Even in works with female protagonists, such as <em>The Color Purple</em>, economic transactions are mainly handled by men, suggesting a gap between narrative focus and material authority. While these digital tools helped me represent power through movement and transaction, they also revealed what the data did not: emotional transformation, symbolic action, and power structures unrelated to purchasing or selling.',
             location: {
                 center: [-89.085766, 30.400424],
@@ -36,7 +36,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Mapping Gendered Power In The South',
-            image: './assets/alice_walker_childhood_home.jpg',
+            image: './assets/Copy-of-Featured-Image-rupaul-9-1.png',
             description: 'One of the most obvious findings from the maps is that male characters are overwhelmingly the economic actors, especially in <em>Salvage the Bones</em> and <em>The Color Purple</em>. In lower Mississippi, where <em>Salvage the Bones</em> takes place, the majority of purchases are done by men. Similarly, purchases in <em>The Color Purple</em> were nearly exclusively made by men in Georgia and Liberia. Even in books where female characters are the main protagonists, male dominance in economic activity persists. The data for <em>The Color Purple</em> also included no "purchased" entries for female characters, emphasizing Celie\'s early economic obscurity.',
             location: {
                 center: [-83.5573651, 32.5573651],
