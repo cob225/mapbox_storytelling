@@ -66,7 +66,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'Where Women Disappear from the Map',
-            image: './assets/as_i_lay_dying.jpg',
+            image: './assets/The_Color_Purple_poster.jpg',
             description: 'The data for <em>The Color Purple</em> is particularly noticeable in its absences because no female "purchased from" data were reported. Celie\'s description of the stamps used to mail letters "Little fat queen of England stamps" shows a woman participating with a global communication and empire. However, the database only registers this as a male transaction, which could be a mistake in the data provided.',
             location: {
                 center: [-9.903750, 6.345389],
